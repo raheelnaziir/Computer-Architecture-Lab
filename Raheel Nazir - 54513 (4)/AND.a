@@ -1,0 +1,9 @@
+START:
+ INP ;
+ STA NUM ; Store the value from the accumulator into memory location NUM
+ INP ; 
+ AND NUM ; Perform bitwise AND operation between AC and the stored NUM
+          
+ OUT ; Output the result of the AND operation
+ HLT ; Halt execution
+NUM: .data 1 0 ; Memory location to store the first input, initially set to 0

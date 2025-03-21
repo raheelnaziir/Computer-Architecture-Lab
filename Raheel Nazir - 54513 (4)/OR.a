@@ -1,0 +1,25 @@
+START:   
+    INP
+    STA NUM1
+    INP
+    STA NUM2
+
+    LDA NUM1
+    CMA
+    STA TEMP1
+
+    LDA NUM2
+    CMA
+    AND TEMP1
+    CMA
+    STA RESULT
+
+    LDA RESULT
+    OUT
+
+    HLT
+
+NUM1: .data 1 0
+NUM2: .data 1 0
+TEMP1: .data 1 0
+RESULT: .data 1 0
